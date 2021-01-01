@@ -16,3 +16,11 @@ However, It is not mandatory that all time series must have a trend and/or seaso
 So, How to diffentiate between a ‘__cyclic__’ vs ‘__seasonal__’ pattern? _If the patterns are not of fixed calendar based frequencies, then it is cyclic. Because, unlike the seasonality, cyclic effects are typically influenced by the business and other socio-economic factors._
 
 * __Irregularity__: These are sudden changes occurring in a time series which are unlikely to be repeated. They are components of a time series that cannot be explained by _trends_, _seasonal_ or _cyclic_ movements. These variations are sometimes called __residual__ or __random components__.
+
+## Additive and Multiplicative Time Series
+Depending on the nature of the __trend__ and __seasonality__, a time series can be modeled as an __additive__ or __multiplicative__, wherein, each observation in the series can be expressed as either a _sum_ or a _product_ of the components:
+
+### Additive time series:
+__Value = Base Level + Trend + Seasonality + Error__
+### Multiplicative Time Series:
+__Value = Base Level x Trend x Seasonality x Error__
