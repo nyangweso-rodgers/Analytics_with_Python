@@ -24,3 +24,10 @@ Depending on the nature of the __trend__ and __seasonality__, a time series can 
 __Value = Base Level + Trend + Seasonality + Error__
 ### Multiplicative Time Series:
 __Value = Base Level x Trend x Seasonality x Error__
+
+## How to decompose a time series into its components?
+You can do a classical decomposition of a time series by considering the series as an __additive__ or __multiplicative__ combination of the _base level_, _trend_, _seasonal index_ and the _residual_. 
+
+The __seasonal_decompose__ in _statsmodels_ implements this conveniently. Setting extrapolate_trend='freq' takes care of any missing values in the trend and residuals at the beginning of the series.
+
+If you look at the _residuals_ of the additive decomposition closely, it has some pattern left over. The multiplicative decomposition, however, looks quite random which is good. So ideally, multiplicative decomposition should be preferred for this particular series.
