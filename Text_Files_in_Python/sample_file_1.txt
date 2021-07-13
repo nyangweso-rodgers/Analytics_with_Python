@@ -1,4 +1,0 @@
-Opening Files
-// Python can be used to read and write the contents of files.
-// text files are the easiest to manipulate .
-// before a file can be edited, it must be opened, using the open functionThis line has been appended to this file using the append method
